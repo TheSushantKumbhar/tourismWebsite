@@ -3,24 +3,33 @@
     padding: 0;
 }
 
+:root
+{
+    --mainColor : #4E598C;
+    --white : #FFFFFF;
+    --orange3: #F9C784;
+    --orange2 : #FCAF58;
+    --orange : #FF8C42;
 
+}
+.priority
+{
+    position: relative;
+}
 header {
     background-image: url(images/back-4.jpg);
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-size: cover;
-    position: relative;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    position: absolute;
 
 }
 
 span {
     font: 2em sans-serif;
-    color: aqua;
 
 }
 
@@ -56,15 +65,15 @@ nav ul {
 
 
 }
-
+ 
 nav ul li {
     color: white;
     margin: 10px;
     padding: 10px;
-    /* border: dotted rgba(255, 255, 255, 0.15); */
+     /* border: dotted rgba(255, 255, 255, 0.15);  */
     border-radius: 5px;
 
-}
+} 
 
 .box1 {
     box-shadow: 0px 8px 4px 0 rgb(0 0 0 / 38%);
@@ -78,7 +87,7 @@ nav ul li {
 
 .box2 {
     padding: 16px;
-    background-color: #4E598C;
+    background-color: var(--mainColor);
     /* background: linear-gradient(to right, #27ccd2, #003fb3); */
     box-shadow: 0px 8px 4px 0 rgb(0 0 0 / 38%);
     border-radius: 20px;
@@ -88,7 +97,7 @@ nav ul li {
 
 .box3 {
     padding: 16px;
-    background-color: #4E598C;
+    background-color: var(--mainColor);
     box-shadow: 0px 8px 4px 0 rgb(0 0 0 / 38%);
     border-radius: 20px;
     padding: 18px;
@@ -107,7 +116,6 @@ nav ul li {
     align-items: flex-end;
     position: sticky;
     top: 0px;
-
 }
 
 
@@ -126,12 +134,13 @@ nav ul li {
     /* border: 2px solid yellow; */
     height: 40vh;
     width: 90vw;
-    margin: 60px;
+    margin: 76px auto 0 auto;
     background-color: white;
     border-radius: 20px;
     padding: 20px;
     font-size: small;
     font-weight: 500;
+    
 
 
 }
@@ -151,6 +160,10 @@ label {
     padding: 15px;
     width: 20vw;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 32vw;
 
 }
 
@@ -159,9 +172,10 @@ label {
     height: 20vh;
     width: 90vw;
     display: grid;
-    margin: 10px 10px;
-    grid-template-columns: 25vw 25vw 20vw 15vw;
+    margin: 25px 10px;
+    grid-template-columns: 25vw 25vw 20vw 18vw;
     grid-auto-rows: 20vh 20vh 20vh 20vh;
+    background-color: rgba(0, 0, 0, 0.027);
 
 }
 
@@ -180,9 +194,65 @@ label {
 
 .planebook
 {
-    margin: 20px 40px;
-    border: 2px solid rgba(0, 0, 0, 0.113);
-    width: 80vw;
-    height: 10vh;
+    margin: 30px 35vw;
+    /* border: 2px solid rgba(0, 0, 0, 0.113); */
+    width: 15vw;
+    height: 7vh;
     border-radius: 30px;
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background: linear-gradient(to right, #4e598c,#fcaf58e8); 
+     color: white;
 }
+
+.booknow
+{
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--orange2);
+
+}
+
+main
+{
+    background-image: url(images/goldenback.jpg);
+    height: 100vh;
+    width: 100vw;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; 
+     position: absolute; 
+    margin-top: 0;
+
+}
+
+
+.offercontainer
+{
+    border: 2px solid black;
+    height: 40vh;
+    width: 90vw;
+    margin: 60px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: small;
+    font-weight: 500;
+} 
+
+.destinations
+{
+    border: 2px solid black;
+    height: 40vh;
+    width: 90vw;
+    margin: 60px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: small;
+    font-weight: 500;
+} 
+
